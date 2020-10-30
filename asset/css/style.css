@@ -1,0 +1,413 @@
+/*
+Theme Name: WebAlive
+Theme URI: 
+Author: 
+Author URI: 
+Description: 
+Tags: 
+Version: 1.0
+Requires at least: 
+Tested up to: 
+Requires PHP: 
+License: 
+License URI: 
+Text Domain: 
+*/
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: gilroy;
+    src: url(fonts/gilroy/Gilroy-ExtraBold.otf);
+}
+@font-face{
+    font-family: aeonik;
+    src: url(fonts/aeonik/Aeonik-Thin.otf);
+}
+
+
+                                                    /*header container*/
+                                            /*----------------------*/
+header{
+  background-image: url(../image/banner-one.png);
+  background-repeat: no-repeat;
+  width: 100wh;
+  height: 100vh;
+  padding: 50px 100px 90px 100px;
+
+}
+
+.menu-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.menu-items{
+    position: relative;
+
+}
+ul{
+    position: absolute;
+    right: 0;
+}
+.item{
+    color: white;
+    float: left;
+    padding: 5px 15px 5px 15px;
+    list-style: none;
+    margin-right: 5px;
+    font-size: 18px;
+    font-family: gilroy;
+}
+.item:hover, .active{
+    background-color: #F47521;
+}
+.arrow{
+    padding-left: 10px;
+}
+
+
+
+/*header-content*/
+
+
+.header-content{
+    margin-top: 100px;
+   text-align: center;
+   color: white;
+}
+
+.header-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.header-content p{
+    position: relative;
+}
+.back-arrow{
+    position: absolute;
+    top: 3px;
+    left: 585px;
+    padding-right: 10px;
+}
+.header-image{
+    width: 250px;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.open-btn{
+    color: white;
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color:#E41E24 ;
+    font-family: aeonik;
+}
+
+
+                                                /*about-fast-track container*/
+                                            /*----------------------*/
+
+
+
+.about-fast-track{
+    padding-left: 150px;
+    padding-right: 30px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    background-color: #E9E9E9;
+}
+.fast-track{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:10px;
+   
+}
+h1{
+    font-family: gilroy;
+    font-size: 64px;
+}
+.leftspace{
+    padding-left: 20px;
+}
+.text p{
+   font-size: 20px;
+   font-family: aeonik;
+}
+.text h1{
+    font-family: gilroy;
+    margin-bottom: 30px;
+}
+.about-image{
+    
+}
+.abouttext{
+    font-family: gilroy;
+    color: black;
+    font-weight: 900;
+    font-size: 64px;
+}
+.fasttext{
+    font-family: gilroy;
+    color: #E41E24;
+    font-weight: 900;
+   
+    font-size: 64px;
+}
+.pc-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+                                                /*the challenge container*/
+                                            /*----------------------*/
+
+
+.challenge{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    height: 580px;
+    
+}
+
+.leftdiv{
+   padding-top: 150px;
+   position: relative;
+}
+.dotimg{
+    position: absolute;
+    left: 250px;
+    top: 160px;
+}
+
+.theChallengeText{
+    position: absolute;
+    left: 320px;
+    top: 210px;
+}
+.rightdiv{
+    padding-top: 100px;
+    position: relative;
+    
+}
+.thetext{
+    font-family: gilroy;
+    font-weight: 900;
+    color: white;
+}
+
+
+.point{
+    font-family: aeonik;
+    position: absolute;
+    left: 0;
+    color: white;
+    list-style-type: none;
+}
+.point-item::before{
+    content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+                                                /*our solution container*/
+                                            /*----------------------*/
+
+.our-solution{
+    padding-top: 70px;
+    text-align: center;
+    background-color: #E9E9E9;
+    padding-bottom: 70px;
+}
+.titleText{
+    font-family: gilroy;
+    margin-bottom: 30px;
+}
+.subTitleText{
+    margin-bottom: 50px;
+}
+.solutiontext{
+    margin-bottom: 60px;
+}
+
+                                                /*The benefits container*/
+                                            /*----------------------*/
+
+
+.benefit{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:20px;
+    background-color: white;
+    height: 580px;
+    
+    
+}
+
+.benefit-leftdiv{
+
+position: relative;
+}
+.storyPic{
+    height: 400px;
+    width: 400px;
+    width: 60%;
+    position: absolute;
+    top:90px;
+}
+.aboutPic{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 28px;
+    left: 300px;
+}
+
+.benefit-rightdiv{
+    padding-left: 20px;
+padding-top: 150px;
+}
+
+
+                                                /*The result container*/
+                                            /*----------------------*/
+
+
+.result{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:  #E9E9E9;
+    height: 580px; 
+    padding-bottom: 200px;
+}
+.result-left{
+padding-left: 250px;
+padding-top: 150px;
+}
+.result-right{
+position: relative;
+}
+.dot-result{
+    width: 180px;
+    height: 260px;
+    position: absolute;
+    top: 50px;
+    right: 200px;
+}
+.mobiles{
+    width: 550px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+}
+
+
+                                                /*affiliate contact container*/
+                                            /*----------------------*/
+
+
+.affiliate-contact{
+    padding: 80px 200px 80px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contact{
+padding-top: 60px;
+padding-left: 100px;
+text-align: center;
+}
+.affiliate-contact-title{
+    margin-bottom: 70px;
+    font-size: 48px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: gilroy;
+}
+.mail a{
+    font-family: aeonik;
+    text-decoration: none;
+    color: #E41E24;
+}
+
+
+                                               /*footer container*/
+                                            /*----------------------*/
+
+
+.footer-div{
+    padding-top: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.last-arrow{
+    padding-left: 20px;
+}
+.footer-column{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: start;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 80px;
+}
+.footer-column p{
+
+    font-size: 15px;
+    font-family: gilroy;
+}
+.col3 a{
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.footer-div-title{
+margin-bottom: 120px;
+font-size: 35px;
+}
+h5{
+    font-family: gilroy;
+    padding-bottom: 35px;
+    font-size: 20px;
+}
+.bottom-footer{
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    position: relative;
+}
+.lastUl{
+    position: absolute;
+    left: 30px;
+}
+
+.lastUl  li{
+    font-family: gilroy;
+    float: left;
+    padding: 5px 10px 5px 10px;
+    list-style: none;
+    font-size: 15px;
+}
+.last-img{
+    float: right;
+}
