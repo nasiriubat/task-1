@@ -19,15 +19,16 @@ Text Domain:
     margin: 0;
     box-sizing: border-box;
 }
+    @font-face{
+        font-family: gilroy;
+        src: url(fonts/gilroy/Gilroy-ExtraBold.otf);
+    }
+    @font-face{
+        font-family: aeonik;
+        src: url(fonts/aeonik/Aeonik-Thin.otf);
+    }
 
-@font-face{
-    font-family: gilroy;
-    src: url(fonts/gilroy/Gilroy-ExtraBold.otf);
-}
-@font-face{
-    font-family: aeonik;
-    src: url(fonts/aeonik/Aeonik-Thin.otf);
-}
+
 
 
                                                     /*header container*/
@@ -54,27 +55,32 @@ header{
 }
 .menu-items{
     position: relative;
+    text-align: center;
 
 }
 ul{
     position: absolute;
     right: 0;
+    
 }
 .item {
-    color: white;
     float: left;
-    padding: 5px 15px 5px 15px;
+    padding: 11px 19px 11px 26px;
     list-style: none;
     margin-right: 5px;
-    font-size: 18px;
-    font-family: gilroy;
+   
 }
 .item a{
     color: white;
     text-decoration: none;
+    font-family: gilroy;
+    font-size: 18px;
 
 }
 .item:hover, .active{
+    text-align: center;
+    width: 172px;
+    height: 45px;
     background-color: #F47521;
 }
 .arrow{
@@ -90,39 +96,35 @@ ul{
     margin-top: 102px;
    text-align: center;
    color: white;
+   
 }
 
-.header-content a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+.portarrow{
+    width: 95px;
+    height: 21px;
 }
-.header-content p{
-    position: relative;
-}
-.back-arrow{
-    position: absolute;
-    top: 3px;
-    left: 585px;
-    padding-right: 10px;
-}
+
 .header-content-text{
     line-height: 30px;
+    font-family: aeonik;
+    font-size: 18px;
 }
 .header-image{
-    width: 250px;
-    height: 100px;
+    width: 249px;
+    height: 91px;
     margin-top: 35px;
     margin-bottom: 40px;
 }
 
 .open-btn{
+    width: 190px;
+    height: 45px;
     color: white;
     margin-top: 41px;
     padding: 10px 20px 10px 20px;
     border: none;
     background-color:#E41E24 ;
-    font-family: aeonik;
+    font-family: gilroy;
 }
 
 
@@ -182,57 +184,50 @@ h1{
                                                 /*the challenge container*/
                                             /*----------------------*/
 
-
 .challenge{
-   
-    display: flex;
-    padding: 110px 370px 110px 380px;
     background-color: black;
-    height: 560px;
+    height: 558px;
     position: relative;
-    
 }
-
-.leftdiv{
-   padding-top: 70px;
-   position: relative;
-   float: left;
-}
-.dotimg{
+.challenge h1{
+    line-height: 69px;
     position: absolute;
-    
-    top: 160px;
-}
-
-.theChallengeText{
-    position: absolute;
-    padding-left: 90px;
-    top: 210px;
-    padding-bottom: 30px;
-}
-.rightdiv{
-    position: absolute;
-    left: 982px;
-    
-}
-.thetext{
+    top: 181px;
+    left:470px;
     font-family: gilroy;
-    font-weight: 900;
+}
+.the-whiteText{
+    font-size: 64px;
     color: white;
 }
+.challenge-redText{
+    font-size: 64px;
+    color: red;
+}
 
-
+.dot-challenge{
+    position: absolute;
+    width: 231px;
+    height: 193px;
+top: 150.5px;
+left: 378.5px;
+}
 .point{
-   
-  
-    font-family: aeonik;
+    position: absolute;
     color: white;
-    list-style: none;
+    /*width: 500px;*/
+
+top: 110px;
+right: 371px;
+bottom: 110px;
+left: 982px;
 }
 .point-item{
-    line-height: 24px;
-    padding-bottom: 24px;
+    list-style: none;
+    font-family: aeonik;
+    margin-bottom: 24px;
     font-size: 17px;
+    line-height: 27px;
 }
 .point-item::before{
     content: "\2022";
@@ -259,12 +254,14 @@ h1{
     
 }
 .subTitleText{
+    font-family: aeonik;
     font-weight: 100;
     font-size: 19px;
     line-height: 27px;
     margin-bottom: 24px;
 }
 .solutiontext {
+    font-family: aeonik;
     font-size: 17px;
     line-height: 29px;
    margin-top: 24px;
@@ -275,40 +272,37 @@ h1{
 
 
 .benefit{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap:104px;
     background-color: white;
     height: 608px;
+    position: relative;
     
     
 }
 
-.benefit-leftdiv{
-
-position: relative;
-}
 .storyPic{
     position: absolute;
     height: 456px;
     width: 436px;
     left: 78px;
     top: 152px;
-    bottom: 0;
+    bottom: 0px;
     
 }
 .aboutPic{
+    position: absolute;
     height: 505px;
     width: 505px;
-    position: absolute;
     left: 475px;
     top: 103px;
-    bottom: 0;
+    bottom: 0px;
     
 }
 
 .benefit-rightdiv{
- padding: 163px 263px 109px;
+ position: absolute;
+ top: 163px;
+ right: 262px;
+ bottom: 109px;
 }
 
 
@@ -331,10 +325,12 @@ margin-right: 310px;
     font-size: 17px;
     line-height: 27px;
     margin-bottom: 33px;
+    font-family: aeonik;
 }
 .result-sub2{
     font-size: 16px;
     line-height: 25px;
+    font-family: aeonik;
 }
 .result-right{
 position: relative;
@@ -385,6 +381,7 @@ text-align: center;
 }
 .contact p{
     font-size: 18px;
+    font-family: aeonik;
 }
 .mail a{
     font-family: aeonik;
@@ -419,7 +416,7 @@ text-align: center;
 .footer-column p{
 
     font-size: 15px;
-    font-family: gilroy;
+    font-family: aeonik;
 }
 .col1 img{
     width: 216px;
@@ -459,11 +456,15 @@ text-align: center;
 .footer-div-title{
 margin-bottom: 120px;
 font-size: 35px;
+font-family: gilroy;
 }
 h5{
     font-family: gilroy;
     padding-bottom: 17px;
     font-size: 20px;
+}
+.last-service{
+    font-family: aeonik !important;
 }
 .bottom-footer{
     
@@ -475,14 +476,16 @@ h5{
 }
 
 .lastUl  li{
-    font-family: gilroy;
+    font-family: aeonik;
     float: left;
     padding: 5px 10px 5px 10px;
     list-style: none;
     font-size: 15px;
+    
 }
 .lastUl li a{
     text-decoration: none;
+    font-family: aeonik;
     color: white;
 }
 .last-img{
