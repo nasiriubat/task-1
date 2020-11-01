@@ -34,17 +34,23 @@ Text Domain:
                                             /*----------------------*/
 header{
   background-image: url(../image/banner-one.png);
+  opacity: 80%;
   background-repeat: no-repeat;
   width: 100wh;
   height: 100vh;
-  padding: 50px 100px 90px 100px;
+  padding: 47px 160px 145px 158px;
 
 }
+
 
 .menu-bar{
     display: grid;
     grid-template-columns: 1fr 1fr;
    
+}
+.logo{
+    width: 200px;
+    height: 35px;
 }
 .menu-items{
     position: relative;
@@ -54,7 +60,7 @@ ul{
     position: absolute;
     right: 0;
 }
-.item{
+.item {
     color: white;
     float: left;
     padding: 5px 15px 5px 15px;
@@ -62,6 +68,11 @@ ul{
     margin-right: 5px;
     font-size: 18px;
     font-family: gilroy;
+}
+.item a{
+    color: white;
+    text-decoration: none;
+
 }
 .item:hover, .active{
     background-color: #F47521;
@@ -76,7 +87,7 @@ ul{
 
 
 .header-content{
-    margin-top: 100px;
+    margin-top: 102px;
    text-align: center;
    color: white;
 }
@@ -95,16 +106,19 @@ ul{
     left: 585px;
     padding-right: 10px;
 }
+.header-content-text{
+    line-height: 30px;
+}
 .header-image{
     width: 250px;
     height: 100px;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-bottom: 40px;
 }
 
 .open-btn{
     color: white;
-    margin-top: 30px;
+    margin-top: 41px;
     padding: 10px 20px 10px 20px;
     border: none;
     background-color:#E41E24 ;
@@ -118,10 +132,8 @@ ul{
 
 
 .about-fast-track{
-    padding-left: 150px;
-    padding-right: 30px;
-    padding-bottom: 70px;
-    padding-top: 50px;
+    margin-top: 12px;
+    padding: 80px 64px 145px 285px;
     background-color: #E9E9E9;
 }
 .fast-track{
@@ -133,17 +145,16 @@ ul{
 h1{
     font-family: gilroy;
     font-size: 64px;
+    line-height: 69px;
 }
 .leftspace{
     padding-left: 20px;
 }
 .text p{
+    padding-top: 25px;
    font-size: 20px;
    font-family: aeonik;
-}
-.text h1{
-    font-family: gilroy;
-    margin-bottom: 30px;
+   line-height: 34px;
 }
 .about-image{
     
@@ -162,8 +173,9 @@ h1{
     font-size: 64px;
 }
 .pc-img{
-    width: 100%;
-    height: 100%;
+    padding-top: 25px;
+    width: 700px;
+    height: 450px;
 }
 
 
@@ -173,31 +185,34 @@ h1{
 
 .challenge{
    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    padding: 110px 370px 110px 380px;
     background-color: black;
-    height: 580px;
+    height: 560px;
+    position: relative;
     
 }
 
 .leftdiv{
-   padding-top: 150px;
+   padding-top: 70px;
    position: relative;
+   float: left;
 }
 .dotimg{
     position: absolute;
-    left: 250px;
+    
     top: 160px;
 }
 
 .theChallengeText{
     position: absolute;
-    left: 320px;
+    padding-left: 90px;
     top: 210px;
+    padding-bottom: 30px;
 }
 .rightdiv{
-    padding-top: 100px;
-    position: relative;
+    position: absolute;
+    left: 982px;
     
 }
 .thetext{
@@ -208,11 +223,16 @@ h1{
 
 
 .point{
+   
+  
     font-family: aeonik;
-    position: absolute;
-    left: 0;
     color: white;
-    list-style-type: none;
+    list-style: none;
+}
+.point-item{
+    line-height: 24px;
+    padding-bottom: 24px;
+    font-size: 17px;
 }
 .point-item::before{
     content: "\2022";
@@ -235,13 +255,19 @@ h1{
 }
 .titleText{
     font-family: gilroy;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    
 }
 .subTitleText{
-    margin-bottom: 50px;
+    font-weight: 100;
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 24px;
 }
-.solutiontext{
-    margin-bottom: 60px;
+.solutiontext {
+    font-size: 17px;
+    line-height: 29px;
+   margin-top: 24px;
 }
 
                                                 /*The benefits container*/
@@ -249,12 +275,11 @@ h1{
 
 
 .benefit{
-   
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap:20px;
+    grid-column-gap:104px;
     background-color: white;
-    height: 580px;
+    height: 608px;
     
     
 }
@@ -264,23 +289,26 @@ h1{
 position: relative;
 }
 .storyPic{
-    height: 400px;
-    width: 400px;
-    width: 60%;
     position: absolute;
-    top:90px;
+    height: 456px;
+    width: 436px;
+    left: 78px;
+    top: 152px;
+    bottom: 0;
+    
 }
 .aboutPic{
-    height: 500px;
-    width: 500px;
+    height: 505px;
+    width: 505px;
     position: absolute;
-    top: 28px;
-    left: 300px;
+    left: 475px;
+    top: 103px;
+    bottom: 0;
+    
 }
 
 .benefit-rightdiv{
-    padding-left: 20px;
-padding-top: 150px;
+ padding: 163px 263px 109px;
 }
 
 
@@ -292,28 +320,38 @@ padding-top: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color:  #E9E9E9;
-    height: 580px; 
-    padding-bottom: 200px;
+    height: 720px; 
 }
 .result-left{
-padding-left: 250px;
-padding-top: 150px;
+padding: 200px 0px 150px 375px;
+margin-right: 310px;
+
+}
+.result-sub{
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 33px;
+}
+.result-sub2{
+    font-size: 16px;
+    line-height: 25px;
 }
 .result-right{
 position: relative;
 }
 .dot-result{
-    width: 180px;
-    height: 260px;
+    width: 214px;
+    height: 287px;
     position: absolute;
-    top: 50px;
-    right: 200px;
+    top: 75px;
+    right: 330px;
 }
 .mobiles{
-    width: 550px;
+    width: 604px;
+    height: 584px;
     position: absolute;
-    top: 65px;
-    left: 0;
+    top: 85px;
+    right: 344px;
 }
 
 
@@ -325,26 +363,34 @@ position: relative;
     padding: 80px 200px 80px 200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
+    align-items: center;
+    height: 534px;
+}
+.affiliate-image{
+    margin-top: 48px;
+    width: 542px;
+    height: 196px;
 }
 
 .contact{
-padding-top: 60px;
-padding-left: 100px;
 text-align: center;
 }
 .affiliate-contact-title{
-    margin-bottom: 70px;
-    font-size: 48px;
+    margin-bottom: 39px;
+    font-size: 48px !important;
     font-weight: lighter;
     text-align: center;
     font-family: gilroy;
+    
+}
+.contact p{
+    font-size: 18px;
 }
 .mail a{
     font-family: aeonik;
     text-decoration: none;
     color: #E41E24;
+    font-size: 18;
 }
 
 
@@ -353,7 +399,8 @@ text-align: center;
 
 
 .footer-div{
-    padding-top: 50px;
+   height: 792px;
+    padding: 67px 170px 210px 158px;
     background-color: black;
     color: white;
     text-align: center;
@@ -374,6 +421,34 @@ text-align: center;
     font-size: 15px;
     font-family: gilroy;
 }
+.col1 img{
+    width: 216px;
+    height: 37px;
+}
+.col1 p{
+    font-size: 14px;
+}
+.col2{
+    margin-left: 275px;
+}
+.col2 p{
+    font-size: 15px;
+    line-height: 29px;
+}
+.col3{
+    margin-left: 119px;
+}
+.col3 p{
+    font-size: 15px;
+    line-height: 23px;
+}
+.col4{
+    margin-left: 108px;
+}
+.col4 p{
+    font-size: 15px;
+    line-height: 23px;
+}
 .col3 a{
     font-size: 22px;
     text-decoration: none;
@@ -387,18 +462,16 @@ font-size: 35px;
 }
 h5{
     font-family: gilroy;
-    padding-bottom: 35px;
+    padding-bottom: 17px;
     font-size: 20px;
 }
 .bottom-footer{
-    padding-bottom: 100px;
-    padding-right: 100px;
-    padding-left: 100px;
+    
     position: relative;
 }
 .lastUl{
     position: absolute;
-    left: 30px;
+    left: 0;
 }
 
 .lastUl  li{
@@ -408,6 +481,12 @@ h5{
     list-style: none;
     font-size: 15px;
 }
+.lastUl li a{
+    text-decoration: none;
+    color: white;
+}
 .last-img{
+    width: 153px;
+    height: 53px;
     float: right;
 }
