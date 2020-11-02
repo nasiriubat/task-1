@@ -319,15 +319,15 @@ left: 982px;
 
 
 .result{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+   position: relative;
     background-color:  #E9E9E9;
     height: 720px; 
     width: 100%;
 }
 .result-left{
-padding: 200px 0px 150px 375px;
-margin-right: 310px;
+position: absolute;
+left: 375px;
+top: 220px;
 
 }
 .result-sub{
@@ -355,8 +355,8 @@ position: relative;
     width: 604px;
     height: 584px;
     position: absolute;
-    top: 85px;
-    right: 344px;
+    top: 86px;
+    left: 992px;
 }
 
 
@@ -366,32 +366,46 @@ position: relative;
 
 .affiliate-contact{
     width: 100%;
-    padding: 80px 200px 80px 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    position: relative;
     align-items: center;
     height: 534px;
 }
-.affiliate-image{
-    margin-top: 48px;
-    width: 542px;
-    height: 196px;
-}
-
-.contact{
-text-align: center;
-}
-.affiliate-contact-title{
-    margin-bottom: 39px;
+.affiliate-title{
+    position: absolute;
+    top: 113px;
+    left: 568px;
     font-size: 48px !important;
     font-weight: lighter;
     text-align: center;
     font-family: gilroy;
     
 }
-.contact p{
+.affiliate-image{
+    position: absolute;
+    top: 225px;
+    left: 401px;
+    width: 542px;
+    height: 196px;
+}
+
+.contact-title{
+    position: absolute;
+    top: 182px;
+    left: 1284px;
+    font-size: 48px !important;
+    font-weight: lighter;
+    text-align: center;
+    font-family: gilroy;
+    
+}
+
+.contact-details{
+    position: absolute;
+    top: 285px;
+    left: 1186px;
     font-size: 18px;
     font-family: aeonik;
+    text-align: center;
 }
 .mail a{
     font-family: aeonik;
